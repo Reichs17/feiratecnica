@@ -64,7 +64,7 @@ header a{
     list-style: 1.3em;
 }
 .carousel .list .item .content .topic{
-    color:#blue;
+    color:hsl(240, 82%, 53%);
 }
 .carousel .list .item .content .buttons{
     display: grid;
