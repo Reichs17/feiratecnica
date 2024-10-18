@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif; 
+    line-height: 1.6;
+    background-color: #d8d8d8; 
+    color: #000000;
+}
+
+a {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Lato'; 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+header {
+    background-color: #007bff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #e6e6e6;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.info-noticia p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.noticia p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #555;
+}
+
+.noticia h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.noticia a {
+    color: #00ccff;
+}
+.noticia a:hover{
+    color: #0056b3;
+}
+.outros-textos {
+    margin-top: 40px;
+    background-color: #979797;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.outros-textos h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.outros-textos ul {
+    list-style: none;
+}
+
+.outros-textos ul li {
+    margin-bottom: 10px;
+}
+
+.outros-textos ul li a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.outros-textos ul li a:hover {
+    color: #0056b3;
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+}
+
+footer nav ul li a:hover {
+    color: #007bff;
+}
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 15px; /* Menos espaçamento nas laterais no mobile */
+        margin: 10px;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none; /* Remove a sombra em dispositivos móveis para simplicidade */
+    }
+
+    header .logo h1 {
+        font-size: 24px; /* Reduz o tamanho do logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu em coluna no mobile */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .noticia h1 {
+        font-size: 24px; /* Título menor no mobile */
+    }
+
+    .noticia h2 {
+        font-size: 20px; /* Intertítulos menores no mobile */
+    }
+
+    .outros-textos {
+        padding: 10px; /* Reduz o padding no mobile */
+    }
+
+    footer nav ul {
+        flex-direction: column; /* Rodapé em coluna no mobile */
+    }
+}
